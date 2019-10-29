@@ -17,8 +17,9 @@ int main() {
         return EXIT_FAILURE;
     }
 
-    while (!feof(in)) {
+    while (1) {
         fscanf(in, "%c", &c);
+        if (feof(in)!=0) break;
         nc = encr(lc, c);
         fwrite(&nc, sizeof(nc), 1, out);
         lc = c;
