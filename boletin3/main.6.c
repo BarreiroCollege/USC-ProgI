@@ -53,14 +53,21 @@ int main() {
     }
 
     /*
-     * El bucle aquí es el mismo que en el ejercicio anterior. Se rompe cuando se llega al final del archivo.
+     * El bucle aquí es el mismo que en el ejercicio anterior. Se rompe cuando se llega al final del archivo, pero se
+     * rompe manualmente con un break dentro del mismo.
+     * Esto es lo que se denomina "bucle infinito" si no tuviese ningún break dentro.
      */
-    while (!feof(in)) {
+    while (1) {
         /*
          * La función fscanf es la misma que en el ejercicio anterior, con la diferencia de que aquí buscará por
          * caracteres en vez de por int. Se guarda lo que encuentra en la variable c.
          */
         fscanf(in, "%c", &c);
+        /*
+         * Cuando se llega al final del archivo el while se ha de romper. Esto ocurre cuando feof deja de valer 0
+         * por lo que solo hay que ejecutar el comando break.
+         */
+        if (feof(in)!=0) break;
         /*
          * A continuación se encripta en la función escrita más abajo (tiene comentarios). En la primera vuelta, lc
          * será 0, de tal forma que el caracter no cambiará.
