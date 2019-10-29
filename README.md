@@ -1,1 +1,2 @@
-# Programacion-I
+# Programacion I
+Repositorio con boletines resueltos
