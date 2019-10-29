@@ -3,6 +3,7 @@
 
 char desc(char last, char c);
 
+
 int main() {
     FILE *in;
     FILE *out;
