@@ -315,19 +315,19 @@ void gravar_datos() {
      * Se inicia una nueva estructura vacía a la que se le copian los valores leídos anteriormente uno a uno, para luego
      * escribir al archivo.
      */
-    Item new;
+    Item nuevo;
     /*
      * El código del artículo no se pregunta, sino que es el mayor código que hay en el archivo +1, ya que se ha de
      * incrementar automaticamente.
      */
-    new.codigo = ultimo()+1;
+    nuevo.codigo = ultimo()+1;
     /*
      * Un array de chars es una cadena, y en C no se puede "pasar" como se pasa un int, sino que hay que usar la función
      * strcpy para poder copiar el valor de una cadena.
      */
-    strcpy(new.nome, nombre);
-    new.prezo = precio;
-    new.cantidade = cantidad;
+    strcpy(nuevo.nome, nombre);
+    nuevo.prezo = precio;
+    nuevo.cantidade = cantidad;
 
     // Abrir el archivo en modo "append" (escribir/añadir al final) binario
     FILE *f = fopen(archivo, "ab");
@@ -349,7 +349,7 @@ void gravar_datos() {
      * . número de elementos a escribir
      * . archivo
      */
-    fwrite(&new, sizeof(Item), 1, f);
+    fwrite(&nuevo, sizeof(Item), 1, f);
 
     // Se cierra el archivo para aplicar los cambios
     fclose(f);
