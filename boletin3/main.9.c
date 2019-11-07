@@ -83,7 +83,7 @@ typedef struct {
  */
 void gravar_datos();
 void leer_datos(Item datos[]);
-int venta_item(int code, int amount, Item datos[]);
+int venta_item(int codigo, int cantidad, Item datos[]);
 
 
 /*
