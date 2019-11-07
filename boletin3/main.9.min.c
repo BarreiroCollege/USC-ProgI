@@ -13,7 +13,7 @@ typedef struct {
 
 void gravar_datos();
 void leer_datos(Item datos[]);
-int venta_item(int code, int amount, Item datos[]);
+int venta_item(int codigo, int cantidad, Item datos[]);
 
 
 int ultimo() {
@@ -112,18 +112,18 @@ void gravar_datos() {
     printf("Cantidad (entero) > ");
     scanf(" %d", &cantidad);
 
-    Item new;
-    new.codigo = ultimo()+1;
-    strcpy(new.nome, nombre);
-    new.prezo = precio;
-    new.cantidade = cantidad;
+    Item nuevo;
+    nuevo.codigo = ultimo()+1;
+    strcpy(nuevo.nome, nombre);
+    nuevo.prezo = precio;
+    nuevo.cantidade = cantidad;
 
     FILE *f = fopen(archivo, "ab");
     if (f == NULL) {
         printf("Error abriendo el archivo!");
         exit(1);
     }
-    fwrite(&new, sizeof(Item), 1, f);
+    fwrite(&nuevo, sizeof(Item), 1, f);
 
     fclose(f);
 }
