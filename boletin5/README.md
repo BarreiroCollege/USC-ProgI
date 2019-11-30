@@ -82,8 +82,9 @@ programa.
 
 ## Entrega
 Para realizar este ejercicio es (muy) recomendable usar Linux debido a que es necesario
-enlazar librerías, y debido a eso se debe usar `gcc`. Si no se quiere instalar, se usar una Virtual
-Machine o activar el Subsistema de Linux en Windows.
+enlazar librerías, y debido a eso se debe usar `gcc`. Si se tine Windows, se puede usar una
+Virtual Machine o activar el Subsistema de Linux en Windows. En Mac, se puede [instalar gcc muy
+fácilmente](https://www.mkyong.com/mac/how-to-install-gcc-compiler-on-mac-os-x/).  
 Para compilar el ejercicio y enlazar las librerías, se usará la siguiente estructura de archivos:
 
 ```
