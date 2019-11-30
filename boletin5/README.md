@@ -82,7 +82,8 @@ programa.
 
 ## Entrega
 Para realizar este ejercicio es (muy) recomendable usar Linux debido a que es necesario
-enlazar librerías, y debido a eso se debe usar `gcc`.  
+enlazar librerías, y debido a eso se debe usar `gcc`. Si no se quiere instalar, se usar una Virtual
+Machine o activar el Subsistema de Linux en Windows.
 Para compilar el ejercicio y enlazar las librerías, se usará la siguiente estructura de archivos:
 
 ```
