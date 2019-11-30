@@ -123,7 +123,7 @@ Esto permite trabajar con librerías compiladas sin conocer el código fuente, s
 El primer paso es compilar todos los archivos que se han escrito. Para esto, se ejecutarán los siguientes comandos:
 
 ```
-gcc -c  src/main.c -o bin/main.o
+gcc -c src/main.c -o bin/main.o
 gcc -c src/rsa.c -o bin/rsa.o
 
 gcc -c src/bignum/library.c -o bin/static/library.o
