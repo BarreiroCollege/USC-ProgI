@@ -14,9 +14,9 @@ Un enteiro grande pode representarse usando un vector de díxitos en base B, usa
 a seguinte:
 ```c
 typedef struct {
-int sign;
-int tam;
-int *val;
+  int sign;
+  int tam;
+  int *val;
 } bignum;
 ```
 onde `signo` é o signo do enteiro, e `tam` é o tamaño do vector dinámico val.
