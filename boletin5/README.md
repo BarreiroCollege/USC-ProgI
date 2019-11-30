@@ -159,3 +159,5 @@ El parámetro `-L` especifica en que carpeta se encuentran las librerías compil
 _lib_ ni extensión).  
 Se genera un archivo llamado `boletin5` que ya puede ser ejecutado a través de `./boletin5` sin importar las librerías de
 las que dependa, porque todas están "dentro" suya.
+
+![](https://i.imgur.com/9atTsb5.png)
